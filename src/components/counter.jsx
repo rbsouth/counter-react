@@ -40,6 +40,7 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
+        {this.props.children}
         {/* <img src={this.state.imgUrl} alt="unavailable" /> */}
         <span style={this.styles} className={this.getBadgeClasses()}>
           {this.formatCount()}
